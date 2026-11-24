@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Thillou — Aerospace & Mechatronics Engineering Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & JetBrains Mono for clean technical aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth subtle scrollbars */
+        ::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-slate-200 selection:text-slate-900 border-t-4 border-slate-900">
+
+    <!-- TOP NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 ring-4 ring-emerald-100"></span>
+                <span class="font-mono text-sm tracking-tight font-semibold text-slate-900">ARTHUR THILLOU</span>
+                <span class="hidden sm:inline-block text-xs font-mono text-slate-400">/</span>
+                <span class="hidden sm:inline-block text-xs font-mono text-slate-500 uppercase tracking-wider">Engineering Portfolio</span>
+            </div>
+
+            <!-- Navigation Anchors -->
+            <nav class="flex items-center gap-6 text-xs font-mono uppercase tracking-wider">
+                <a href="#m270-dossier" class="text-slate-600 hover:text-slate-950 font-medium transition flex items-center gap-1.5">
+                    <span class="text-slate-400">#01</span> M270 Launcher
+                </a>
+                <a href="#dc3-dossier" class="text-slate-600 hover:text-slate-950 font-medium transition flex items-center gap-1.5">
+                    <span class="text-slate-400">#02</span> DC-3 CAD
+                </a>
+                <a href="#workshop-skills" class="hidden md:flex text-slate-600 hover:text-slate-950 font-medium transition items-center gap-1.5">
+                    <span class="text-slate-400">#03</span> Tooling
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14 space-y-16">
+
+        <!-- EXECUTIVE PROFILE & HERO SUMMARY -->
+        <section class="bg-white border border-slate-200 rounded-xl p-6 sm:p-10 shadow-sm relative overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Details: Bio & Core Mission Statement -->
+                <div class="lg:col-span-8 space-y-5">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono border border-slate-200">
+                        <i class="fa-solid fa-graduation-cap text-slate-500"></i>
+                        <span>ELISA-Aerospace (Bordeaux Area) • Engineering Cycle Yr 1</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-950 leading-tight">
+                        Aeronautical & Mechatronics Engineering Candidate
+                    </h1>
+
+                    <p class="text-base text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        Practical-minded aerospace engineering student with hands-on experience in CAD modeling, rapid prototyping, and mechatronic systems. Seeking meaningful field engineering work where real-world systems protect lives, ready to apply rigorous prototyping and fast troubleshooting to high-impact defense operations.
+                    </p>
+
+                    <!-- Fast Contact Strip -->
+                    <div class="flex flex-wrap items-center gap-y-2 gap-x-6 pt-2 text-xs font-mono text-slate-600">
+                        <a href="mailto:a.thillou@elisa-aerospace.fr" class="hover:text-slate-950 flex items-center gap-2 transition">
+                            <i class="fa-regular fa-envelope text-slate-400"></i> a.thillou@elisa-aerospace.fr
+                        </a>
+                        <span class="text-slate-300 hidden sm:inline">•</span>
+                        <a href="tel:+33771369299" class="hover:text-slate-950 flex items-center gap-2 transition">
+                            <i class="fa-solid fa-phone text-slate-400"></i> +33 7 71 36 92 99
+                        </a>
+                        <span class="text-slate-300 hidden sm:inline">•</span>
+                        <a href="https://www.linkedin.com/in/arthur-thillou-767980332" target="_blank" class="hover:text-slate-950 flex items-center gap-2 transition underline decoration-slate-300 underline-offset-4">
+                            <i class="fa-brands fa-linkedin text-blue-600"></i> LinkedIn Profile
+                        </a>
+                        <span class="text-slate-300 hidden sm:inline">•</span>
+                        <span class="flex items-center gap-2 text-slate-500">
+                            <i class="fa-solid fa-id-card text-slate-400"></i> French Driving License B
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Details: Rapid Status Box -->
+                <div class="lg:col-span-4 bg-slate-50 border border-slate-200 rounded-lg p-5 space-y-4">
+                    <div class="text-xs font-mono uppercase tracking-wider text-slate-500 border-b border-slate-200 pb-2 flex justify-between items-center">
+                        <span>Candidate Status</span>
+                        <span class="text-emerald-700 font-semibold bg-emerald-100 px-2 py-0.5 rounded text-[11px]">Available</span>
+                    </div>
+
+                    <div class="space-y-2 text-xs">
+                        <div class="flex justify-between py-1 border-b border-slate-100">
+                            <span class="text-slate-500">Location :</span>
+                            <span class="font-mono font-medium text-slate-800">Saint-Jean-d'Illac (33)</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-slate-100">
+                            <span class="text-slate-500">Target Role :</span>
+                            <span class="font-medium text-slate-800">Engineering Internship</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-slate-100">
+                            <span class="text-slate-500">Core Tools :</span>
+                            <span class="font-mono font-medium text-slate-800">Fusion 360, CATIA, ESP32</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span class="text-slate-500">Target Sector :</span>
+                            <span class="font-medium text-slate-800">Defense & Unmanned Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- PROJECT 1: M270 TRACKED MISSILE LAUNCHER (CAPSTONE)      -->
+        <!-- ======================================================== -->
+        <section id="m270-dossier" class="bg-white border border-slate-200 rounded-xl p-6 sm:p-10 shadow-sm space-y-10">
+            
+            <!-- Section Header & Deliverables -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-200">
+                <div class="space-y-1">
+                    <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-500">
+                        <span class="text-slate-900 font-bold">CASE STUDY 01</span>
+                        <span>•</span>
+                        <span>Mechatronics Capstone</span>
+                        <span>•</span>
+                        <span>Team of 7</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+                        M270 Remote Tracked Missile Launcher
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-500 font-mono">
+                        ELISA-Aerospace 3rd Year Capstone Project • Defended before Engineering Jury
+                    </p>
+                </div>
+
+                <!-- Document Modal Triggers -->
+                <div class="flex flex-wrap items-center gap-2.5">
+                    <button onclick="openModal('user-manual-modal')" class="px-3.5 py-2 rounded bg-slate-900 hover:bg-slate-800 text-white text-xs font-mono font-medium shadow-sm transition flex items-center gap-2">
+                        <i class="fa-solid fa-file-pdf text-rose-400"></i> Open User Manual (PDF)
+                    </button>
+                    <button onclick="openModal('poster-modal')" class="px-3.5 py-2 rounded bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-mono font-medium border border-slate-200 transition flex items-center gap-2">
+                        <i class="fa-solid fa-image text-slate-600"></i> View Project Poster (Image)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Technical Metadata Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200 text-xs font-mono">
+                <div>
+                    <span class="text-slate-500 block">ROLE</span>
+                    <span class="font-semibold text-slate-900">Technical Lead (Architecture, Sizing & Code)</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 block">DIMENSIONS</span>
+                    <span class="font-semibold text-slate-900">50 × 20 × 20–40 cm</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 block">POWER RAIL</span>
+                    <span class="font-semibold text-slate-900">LiPo Battery + H-Bridge Drivers</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 block">STATUS</span>
+                    <span class="font-semibold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded">Validated & Defended</span>
+                </div>
+            </div>
+
+            <!-- Detailed Case Study Body -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left 7 Columns: Core Technical Breakdown -->
+                <div class="lg:col-span-7 space-y-6 text-sm text-slate-700 leading-relaxed">
+                    
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 1. Mission Scope & Operational Requirements
+                        </h3>
+                        <p>
+                            The objective was to engineer a rugged, tracked terrestrial vehicle capable of negotiating uneven obstacles (up to 20 mm step gravel) while remotely pointing and launching standard foam pneumatic projectiles. Strict requirements governed budget limitations, weight distribution, and tight delivery deadlines for live demonstration in the school's agora.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 2. Embedded Architecture & Firmware (My Scope)
+                        </h3>
+                        <ul class="list-disc pl-5 space-y-1.5 marker:text-slate-400">
+                            <li><strong>Processing Core:</strong> ESP32-S3 microcontroller chosen for its dual-core processing capabilities and native Wi-Fi softAP mode (<code class="bg-slate-100 px-1 rounded font-mono text-xs">192.168.4.1</code>).</li>
+                            <li><strong>Telemetry & C2 Protocol:</strong> Real-time bi-directional WebSocket interface delivering sub-15ms latency without external router infrastructure. Features independent speed sliders for left/right tracks, virtual D-pad turret azimuth control, and dynamic elevation display.</li>
+                            <li><strong>Kinematics & Inertial Feedback:</strong> Integrated 6-DOF <strong>MPU-6050</strong> IMU for pitch/roll monitoring. Programmed safety lockouts preventing vehicle firing if tilt exceeded safe operational envelope (<code class="bg-slate-100 px-1 rounded font-mono text-xs">Pitch Threshold: 15°</code>).</li>
+                            <li><strong>Schematics & Routing:</strong> Full hardware distribution mapped in <strong>KiCad</strong>, incorporating dedicated flyback diodes, optical endstop switches for barrel indexing, and separate logic/motor voltage rails.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 3. Mechanics, Geneva Drive & Suspension
+                        </h3>
+                        <p>
+                            Designed in <strong>CATIA V5</strong> and fabricated via FDM 3D printing. The turret utilizes a precision <strong>Geneva drive (croix de Malte)</strong> mechanism coupled with a linear pusher to index revolving projectile chambers reliably. Suspension relies on an articulated multi-bogie architecture with individual return springs for ground compliance.
+                        </p>
+                    </div>
+
+                    <!-- Thermal & Sizing Lessons Learned (Critical for Engineers) -->
+                    <div class="bg-amber-50/70 border border-amber-200/80 rounded-lg p-4 space-y-2 text-xs">
+                        <div class="font-mono uppercase font-bold text-amber-900 flex items-center gap-2">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Engineering Post-Mortem: Thermal Derating Sizing Trap
+                        </div>
+                        <p class="text-amber-950 leading-relaxed">
+                            <strong>The Failure:</strong> During sustained obstacle crossing stall tests, initial motor drivers experienced thermal shutdown and burnout. The components had been sized assuming advertised 3A peak capacity was valid for continuous duty.
+                        </p>
+                        <p class="text-amber-950 leading-relaxed">
+                            <strong>The Correction & Takeaway:</strong> In real bench conditions, components sustained thermal runaway beyond 2.5A without forced convection. Redesigned power stages with 30% thermal derating headroom and active telemetry monitoring. Demonstrates that datasheets provide theoretical bounds; physical reliability demands bench-testing continuous loads.
+                        </p>
+                    </div>
+
+                    <!-- Leadership / Team Constraints -->
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 4. Project Leadership & Execution
+                        </h3>
+                        <p class="text-slate-600">
+                            As technical lead in a 7-person multidisciplinary team, managed unequal workload engagement by redistributing critical path tasks, personally absorbing firmware debugging and wiring bottlenecks, and ensuring compliance with the delivery deadline for faculty jury evaluation.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Right 5 Columns: Interactive Media Widgets & Interface Replica -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <!-- Media Card 1: Suspension & Obstacle Video Test -->
+                    <div class="border border-slate-200 rounded-lg overflow-hidden bg-slate-900 shadow-sm">
+                        <div class="px-3 py-2 bg-slate-950 text-slate-300 flex items-center justify-between text-xs font-mono border-b border-slate-800">
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-play text-emerald-400 text-[10px]"></i> Mobility & Suspension Test
+                            </span>
+                            <span class="text-[11px] text-slate-500 font-mono">16s Bench Video</span>
+                        </div>
+                        <div class="relative bg-black flex items-center justify-center">
+                            <video controls class="w-full h-auto max-h-72 object-contain" poster="assets/videos/WhatsApp Video 2026-11-23 at 19.24.20.mp4">
+                                <source src="assets/videos/WhatsApp Video 2026-11-23 at 19.24.20.mp4" type="video/mp4">
+                                <div class="p-6 text-center text-xs font-mono text-slate-400">
+                                    Your browser cannot play embedded MP4. File: assets/videos/WhatsApp Video 2026-11-23 at 19.24.20.mp4
+                                </div>
+                            </video>
+                        </div>
+                        <div class="p-3 bg-white border-t border-slate-200 text-xs text-slate-600 font-mono">
+                            <span class="text-slate-900 font-semibold">Test Observation:</span> Articulated bogie compliance over rigid stepped obstacle. Spring rebound validated track link retention without de-tracking.
+                        </div>
+                    </div>
+
+                    <!-- Media Card 2: Interactive Web Control UI Replica -->
+                    <div class="border border-slate-200 rounded-lg overflow-hidden bg-slate-950 text-slate-200 shadow-md">
+                        <div class="px-3 py-2 bg-slate-900 flex items-center justify-between text-xs font-mono border-b border-slate-800">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                <span class="font-bold text-slate-100">ESP32-S3 Web Command UI</span>
+                            </div>
+                            <span class="text-[10px] text-slate-400 font-mono bg-slate-800 px-1.5 py-0.5 rounded">192.168.4.1</span>
+                        </div>
+
+                        <!-- Live Interactive UI Simulation based on actual app screenshot -->
+                        <div class="p-4 space-y-4 text-xs font-mono">
+                            
+                            <!-- Status bar -->
+                            <div class="flex items-center justify-between border-b border-slate-800 pb-2 text-[11px] text-slate-400">
+                                <span class="text-emerald-400 font-medium flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> WebSocket Connected
+                                </span>
+                                <span>Munitions: <strong class="text-slate-200">Loaded (6)</strong></span>
+                                <span>Trap: <strong class="text-emerald-400">Closed</strong></span>
+                            </div>
+
+                            <!-- Dual Track Sliders & D-Pad Controls -->
+                            <div class="grid grid-cols-12 gap-2 items-center py-2">
+                                <!-- Left Track Slider -->
+                                <div class="col-span-3 flex flex-col items-center gap-1 bg-slate-900/60 p-2 rounded border border-slate-800">
+                                    <span class="text-[10px] text-slate-400 uppercase">Left Track</span>
+                                    <input type="range" min="-100" max="100" value="0" class="h-20 w-3 accent-emerald-500 cursor-pointer -rotate-90 my-3" id="leftTrackSlider" oninput="document.getElementById('leftVal').textContent = this.value">
+                                    <span class="text-xs font-bold text-emerald-400 font-mono" id="leftVal">0</span>
+                                </div>
+
+                                <!-- Turret D-Pad & Elevation Dial -->
+                                <div class="col-span-6 flex flex-col items-center justify-center gap-2">
+                                    <div class="text-[10px] text-slate-400 uppercase tracking-wider">Turret Articulation</div>
+                                    <div class="grid grid-cols-3 gap-1 w-28">
+                                        <div></div>
+                                        <button class="h-8 bg-slate-800 hover:bg-slate-700 active:bg-slate-600 rounded text-slate-200 flex items-center justify-center transition border border-slate-700">
+                                            <i class="fa-solid fa-caret-up"></i>
+                                        </button>
+                                        <div></div>
+                                        <button class="h-8 bg-slate-800 hover:bg-slate-700 active:bg-slate-600 rounded text-slate-200 flex items-center justify-center transition border border-slate-700">
+                                            <i class="fa-solid fa-caret-left"></i>
+                                        </button>
+                                        <div class="h-8 flex items-center justify-center text-[10px] text-slate-500 font-bold">AZ/EL</div>
+                                        <button class="h-8 bg-slate-800 hover:bg-slate-700 active:bg-slate-600 rounded text-slate-200 flex items-center justify-center transition border border-slate-700">
+                                            <i class="fa-solid fa-caret-right"></i>
+                                        </button>
+                                        <div></div>
+                                        <button class="h-8 bg-slate-800 hover:bg-slate-700 active:bg-slate-600 rounded text-slate-200 flex items-center justify-center transition border border-slate-700">
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+                                        <div></div>
+                                    </div>
+                                    <div class="text-[11px] text-slate-400 pt-1">
+                                        Elevation: <span class="text-emerald-400 font-bold">28°</span> <span class="text-slate-600">(Safety Cap: 45°)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Right Track Slider -->
+                                <div class="col-span-3 flex flex-col items-center gap-1 bg-slate-900/60 p-2 rounded border border-slate-800">
+                                    <span class="text-[10px] text-slate-400 uppercase">Right Track</span>
+                                    <input type="range" min="-100" max="100" value="0" class="h-20 w-3 accent-emerald-500 cursor-pointer -rotate-90 my-3" id="rightTrackSlider" oninput="document.getElementById('rightVal').textContent = this.value">
+                                    <span class="text-xs font-bold text-emerald-400 font-mono" id="rightVal">0</span>
+                                </div>
+                            </div>
+
+                            <!-- Fire Sequence Command Strip -->
+                            <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-800">
+                                <button class="py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded font-semibold text-[11px] border border-slate-700 transition">
+                                    <i class="fa-solid fa-shield-halved text-amber-400"></i> Arm
+                                </button>
+                                <button class="py-2 bg-rose-700 hover:bg-rose-600 text-white rounded font-bold text-[11px] shadow-sm transition">
+                                    <i class="fa-solid fa-rocket"></i> Launch
+                                </button>
+                                <button class="py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded font-semibold text-[11px] border border-slate-700 transition">
+                                    <i class="fa-solid fa-rotate text-sky-400"></i> Reload
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="px-3 py-2 bg-slate-900/90 text-slate-500 text-[10px] font-mono border-t border-slate-800 flex justify-between items-center">
+                            <span>Diagnostic Console: No packet loss detected</span>
+                            <span class="text-slate-400">Raw IP: 192.168.4.1</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- PROJECT 2: DOUGLAS DC-3 / C-47 1:20 SCALE CAD REPLICA    -->
+        <!-- ======================================================== -->
+        <section id="dc3-dossier" class="bg-white border border-slate-200 rounded-xl p-6 sm:p-10 shadow-sm space-y-10">
+            
+            <!-- Section Header & Deliverables -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-200">
+                <div class="space-y-1">
+                    <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-500">
+                        <span class="text-slate-900 font-bold">CASE STUDY 02</span>
+                        <span>•</span>
+                        <span>Aeronautical Reverse Engineering</span>
+                        <span>•</span>
+                        <span>Solo Project</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+                        Douglas DC-3 / C-47 Scale CAD Architecture (1:20)
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-500 font-mono">
+                        Historical Blueprints Digitalization • Airframe Skeleton & Hybrid Skinning
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-2 font-mono text-xs text-slate-500 bg-slate-100 border border-slate-200 px-3 py-1.5 rounded">
+                    <span>Target Wingspan:</span>
+                    <strong class="text-slate-900 font-semibold">1.50 m (Wingspan)</strong>
+                </div>
+            </div>
+
+            <!-- Technical Metadata Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200 text-xs font-mono">
+                <div>
+                    <span class="text-slate-500 block">CAD SUITE</span>
+                    <span class="font-semibold text-slate-900">Autodesk Fusion 360</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 block">PRIMARY ARCHIVE</span>
+                    <span class="font-semibold text-slate-900">USAF T.O. 1C-47A-4 Parts List (1956)</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 block">MODELING METHOD</span>
+                    <span class="font-semibold text-slate-900">Solid Skeleton + Surfacing</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 block">CURRENT STATUS</span>
+                    <span class="font-semibold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded">In Progress (~20%)</span>
+                </div>
+            </div>
+
+            <!-- Detailed Case Study Body -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left 7 Columns: Engineering Description -->
+                <div class="lg:col-span-7 space-y-6 text-sm text-slate-700 leading-relaxed">
+                    
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 1. Project Scope & Structural Intent
+                        </h3>
+                        <p>
+                            The goal of this project is to model an authentic <strong>1:20 scale replica</strong> of the legendary Douglas DC-3 (1.50 m wingspan) directly derived from period military technical orders and manufacturer blueprints. While initially conceived as an exhibition-grade display piece, internal load-bearing geometry and wing spars are sized to allow future conversion to radio-controlled flight.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 2. True Aeronautical Hierarchy & Nomenclature
+                        </h3>
+                        <p>
+                            Rather than creating an empty solid shell, the airframe reproduces true internal aeronautical structural elements:
+                        </p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1.5 marker:text-slate-400">
+                            <li><strong>Spars & Formers:</strong> Main and auxiliary shear beams carrying bending loads across the center wing section and empennage.</li>
+                            <li><strong>Lightening Holes Ribs:</strong> Internal rib profiles calculated with lightening holes to optimize stiffness-to-weight ratio for FDM manufacturing.</li>
+                            <li><strong>Part Numbering Traceability:</strong> Designed with industrial assembly conventions (<code class="bg-slate-100 px-1 rounded font-mono text-xs">type_part_side_index</code>, e.g. <code class="bg-slate-100 px-1 rounded font-mono text-xs">Nervure_WL_42</code> for Wing Left Rib #42).</li>
+                            <li><strong>Kinematic Retractable Gear:</strong> Retractable main gear linkage geometry designed to fold into nacelles maintaining historical pivoting axes.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 3. Manufacturing Innovation: Hybrid Metal Skinning
+                        </h3>
+                        <p>
+                            To bypass the plastic appearance of conventional 3D prints without requiring industrial tooling, I developed a <strong>hybrid skinning technique</strong>:
+                        </p>
+                        <div class="bg-slate-50 border border-slate-200 rounded p-3 font-mono text-xs text-slate-600 space-y-1">
+                            <div>• <strong>Phase A:</strong> 3D print an ultra-thin flexible plastic skin substrate (0.4–0.6 mm) featuring pre-embossed rivet lines and plate overlap seams.</div>
+                            <div>• <strong>Phase B:</strong> Laminate and burnish (<em class="text-slate-800">maroufler</em>) real annealed aluminum foil over the embossed plastic. Under burnishing pressure, the foil stretches over the rivets and seam lines, producing realistic metallic reflections and genuine surface weathering.</div>
+                        </div>
+                    </div>
+
+                    <!-- CAD Dilemmas & Resolution -->
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 4. Historical CAD Dilemmas & Plan Interpolation
+                        </h3>
+                        <p class="text-slate-600">
+                            Working from period 1940s-1950s blueprints introduces significant tolerance gaps: cross-sectional views often contradict elevation drawings, and wing-to-fuselage fairing junctions (Karman fairings) lack explicit geometric radius callouts. Resolving these requires geometric loft interpolation, parametric cross-checking, and empirical test slicing in Fusion 360 to guarantee printable tolerances.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Right 5 Columns: Visual Engineering Gallery -->
+                <div class="lg:col-span-5 space-y-4">
+                    
+                    <!-- Media Card 1: Fusion 360 Vertical Stabilizer CAD Capture -->
+                    <div class="border border-slate-200 rounded-lg overflow-hidden bg-slate-900 shadow-sm group">
+                        <div class="px-3 py-2 bg-slate-950 text-slate-300 flex items-center justify-between text-xs font-mono border-b border-slate-800">
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-cube text-sky-400 text-[10px]"></i> Vert Stab 2 (Fusion 360)
+                            </span>
+                            <span class="text-[10px] text-slate-400 font-mono">Internal Skeleton</span>
+                        </div>
+                        <div class="relative bg-slate-950 flex items-center justify-center p-2">
+                            <img src="assets/images/image_bec233.jpg" 
+                                 alt="Fusion 360 Vertical Stabilizer CAD internal structure" 
+                                 class="w-full h-auto max-h-56 object-contain rounded cursor-pointer hover:opacity-95 transition"
+                                 onclick="inspectImage(this.src, 'Vertical Stabilizer Skeleton (Fusion 360) — Spars, lightening ribs & assembly references')">
+                        </div>
+                        <div class="p-3 bg-white border-t border-slate-200 text-xs text-slate-600 font-mono">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-slate-900">Internal Ribs & Spar Assembly</span>
+                                <span class="text-[11px] text-slate-400">Click to expand</span>
+                            </div>
+                            <p class="text-[11px] text-slate-500 mt-1">Shows parametric feature tree (VS-1 to VS-136.125), internal lightening cutouts, and antenna mount rib.</p>
+                        </div>
+                    </div>
+
+                    <!-- Media Card 2: USAF Blueprint Archive (Empennage T.O. 1C-47A-4) -->
+                    <div class="border border-slate-200 rounded-lg overflow-hidden bg-slate-100 shadow-sm group">
+                        <div class="px-3 py-2 bg-slate-900 text-slate-200 flex items-center justify-between text-xs font-mono border-b border-slate-800">
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-book-bookmark text-amber-400 text-[10px]"></i> Period Archive Blueprint
+                            </span>
+                            <span class="text-[10px] text-slate-400 font-mono">T.O. 1C-47A-4 (1956)</span>
+                        </div>
+                        <div class="relative bg-white flex items-center justify-center p-2">
+                            <img src="assets/images/VS 2.jpg" 
+                                 alt="USAF Technical Order 1C-47A-4 Empennage Blueprint" 
+                                 class="w-full h-auto max-h-52 object-contain rounded cursor-pointer hover:opacity-95 transition"
+                                 onclick="inspectImage(this.src, 'USAF T.O. 1C-47A-4 (Jan 1956) — Empennage Group Assembly Parts List used for reverse modeling')">
+                        </div>
+                        <div class="p-3 bg-white border-t border-slate-200 text-xs text-slate-600 font-mono">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-slate-900">USAF C-47A Empennage Blueprint</span>
+                                <span class="text-[11px] text-slate-400">Click to expand</span>
+                            </div>
+                            <p class="text-[11px] text-slate-500 mt-1">Fig. 37 & 38 Vertical / Horizontal stabilizer breakdown, rib spacing, and hinge pivot lines.</p>
+                        </div>
+                    </div>
+
+                    <!-- Media Card 3: Aeronautical Structural Principles (Spars & Ribs) -->
+                    <div class="border border-slate-200 rounded-lg overflow-hidden bg-white shadow-sm">
+                        <div class="px-3 py-2 bg-slate-100 text-slate-700 flex items-center justify-between text-xs font-mono border-b border-slate-200">
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-diagram-project text-slate-600 text-[10px]"></i> Structural Airframe Taxonomy
+                            </span>
+                            <span class="text-[10px] text-slate-500 font-mono">Cutaway Reference</span>
+                        </div>
+                        <div class="relative bg-white flex items-center justify-center p-2">
+                            <img src="assets/images/image_be51d6.png" 
+                                 alt="Aircraft wing structural breakdown: Spar, Ribs, Stringers, Skin" 
+                                 class="w-full h-auto max-h-40 object-contain rounded cursor-pointer hover:opacity-95 transition"
+                                 onclick="inspectImage(this.src, 'Aerospace Airframe Taxonomy — Spars, stringers, ribs, lightening holes and skin load paths')">
+                        </div>
+                        <div class="p-3 bg-slate-50 border-t border-slate-200 text-[11px] text-slate-500 font-mono">
+                            Structural hierarchy applied to the DC-3 CAD architecture: Spar (primary bending) $\rightarrow$ Ribs (camber contour) $\rightarrow$ Stringers (axial torsion) $\rightarrow$ Skin.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- SECTION 3: WORKSHOP & PROTOTYPING SKILLS MATRIX          -->
+        <!-- ======================================================== -->
+        <section id="workshop-skills" class="bg-white border border-slate-200 rounded-xl p-6 sm:p-10 shadow-sm space-y-6">
+            <div class="space-y-1">
+                <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-500">
+                    <span class="text-slate-900 font-bold">SECTION 03</span>
+                    <span>•</span>
+                    <span>Field & Workshop Capabilities</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900">
+                    Technical Tooling, Prototyping & Workshop Skills
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-500 font-mono">
+                    Direct hands-on experience ready for workshop and testing deployment
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+                
+                <!-- Col 1: CAD & Numerical Modeling -->
+                <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 space-y-3">
+                    <div class="flex items-center gap-2 font-mono text-xs font-bold text-slate-900 uppercase">
+                        <i class="fa-solid fa-compass-drafting text-slate-700"></i> CAD & Simulation
+                    </div>
+                    <ul class="text-xs space-y-2 text-slate-600 font-mono">
+                        <li class="flex items-center justify-between">
+                            <span>Autodesk Fusion 360</span>
+                            <span class="text-emerald-700 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">Advanced</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>CATIA V5 / 3D-Experience</span>
+                            <span class="text-emerald-700 font-medium">Proficient</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>SketchUp Pro</span>
+                            <span class="text-slate-500">Familiar</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>MATLAB / Simulink</span>
+                            <span class="text-slate-500">Academic</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Embedded Systems & Firmware -->
+                <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 space-y-3">
+                    <div class="flex items-center gap-2 font-mono text-xs font-bold text-slate-900 uppercase">
+                        <i class="fa-solid fa-microchip text-slate-700"></i> Embedded & Electronics
+                    </div>
+                    <ul class="text-xs space-y-2 text-slate-600 font-mono">
+                        <li class="flex items-center justify-between">
+                            <span>C++ & Arduino Firmware</span>
+                            <span class="text-emerald-700 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">Advanced</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>ESP32 / ESP32-S3</span>
+                            <span class="text-emerald-700 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">Advanced</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>KiCad (Schematics & PCB)</span>
+                            <span class="text-emerald-700 font-medium">Proficient</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>HTML / WebSockets UI</span>
+                            <span class="text-slate-600">Working Knowledge</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Python (Scripting & Automation)</span>
+                            <span class="text-slate-500">Basic</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Workshop, Prototyping & Field Ops -->
+                <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 space-y-3">
+                    <div class="flex items-center gap-2 font-mono text-xs font-bold text-slate-900 uppercase">
+                        <i class="fa-solid fa-wrench text-slate-700"></i> Fabrication & Workshop
+                    </div>
+                    <ul class="text-xs space-y-2 text-slate-600 font-mono">
+                        <li class="flex items-center justify-between">
+                            <span>FDM 3D Printing & Slicing</span>
+                            <span class="text-emerald-700 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">Daily</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Wiring & Bench Soldering</span>
+                            <span class="text-emerald-700 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">Advanced</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span>Hand & Power Bench Tools</span>
+                            <span class="text-emerald-700 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">Autonomous</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-200 bg-white py-8 mt-16 text-center text-xs font-mono text-slate-500">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 Arthur Thillou • Aerospace Engineering Candidate
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#m270-dossier" class="hover:text-slate-900">Back to Top</a>
+                <span>•</span>
+                <a href="mailto:a.thillou@elisa-aerospace.fr" class="hover:text-slate-900">Direct Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================================================== -->
+    <!-- MODAL 1: USER MANUAL (REAL PDF VIEWER)                   -->
+    <!-- ======================================================== -->
+    <div id="user-manual-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center p-2 sm:p-4">
+        <div class="bg-white border border-slate-200 rounded-xl w-full max-w-5xl h-[92vh] flex flex-col shadow-2xl overflow-hidden">
+            <!-- Modal Header -->
+            <div class="px-5 py-3.5 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800 shrink-0">
+                <div class="flex items-center gap-3">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                    <span class="font-mono text-xs uppercase tracking-wider font-semibold text-slate-200">
+                        Notice d'utilisation — BRADLEY M270 (Manuel Officiel)
+                    </span>
+                    <span class="text-[11px] font-mono bg-slate-800 px-2 py-0.5 rounded text-slate-400 hidden sm:inline">
+                        17 Pages • ELISA-Aerospace
+                    </span>
+                </div>
+                <div class="flex items-center gap-3 text-xs font-mono">
+                    <label class="cursor-pointer bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded text-slate-200 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-folder-open text-sky-400"></i>
+                        <span>Charger mon PDF</span>
+                        <input type="file" id="pdfFileInput" accept="application/pdf" class="hidden" onchange="handlePdfUpload(event)">
+                    </label>
+                    <a id="pdfDirectDownload" href="assets/documents/Notice d'utilisation.pdf" target="_blank" class="bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded text-slate-200 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-400"></i>
+                        <span class="hidden md:inline">Ouvrir plein écran</span>
+                    </a>
+                    <button onclick="closeModal('user-manual-modal')" class="text-slate-400 hover:text-white text-base pl-2">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- PDF Viewer Body -->
+            <div class="flex-1 bg-slate-100 relative overflow-hidden flex flex-col">
+                <iframe id="pdfFrame" src="assets/documents/Notice d'utilisation.pdf" class="w-full
