@@ -71,8 +71,11 @@
                 <a href="#dc3-dossier" class="text-slate-600 hover:text-slate-950 font-medium transition flex items-center gap-1.5">
                     <span class="text-slate-400">#02</span> DC-3 CAD
                 </a>
+                <a href="#vault-iot-dossier" class="text-slate-600 hover:text-slate-950 font-medium transition flex items-center gap-1.5">
+                    <span class="text-slate-400">#03</span> Vault-Tec IoT
+                </a>
                 <a href="#workshop-skills" class="hidden md:flex text-slate-600 hover:text-slate-950 font-medium transition items-center gap-1.5">
-                    <span class="text-slate-400">#03</span> Tooling
+                    <span class="text-slate-400">#04</span> Tooling
                 </a>
             </nav>
         </div>
@@ -153,10 +156,10 @@
         <!-- ======================================================== -->
         <!-- PROJECT 1: M270 TRACKED MISSILE LAUNCHER (CAPSTONE)      -->
         <!-- ======================================================== -->
-        <section id="m270-dossier" class="bg-white border border-slate-200 rounded-xl p-6 sm:p-10 shadow-sm space-y-10">
+        <details id="m270-dossier" class="group bg-white border border-slate-200 rounded-xl p-6 sm:p-10 shadow-sm transition-all scroll-mt-20">
             
             <!-- Section Header & Deliverables -->
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-200">
+            <summary class="cursor-pointer list-none select-none [&::-webkit-details-marker]:hidden flex flex-col md:flex-row md:items-center justify-between gap-4 group-open:pb-6 group-open:border-b group-open:border-slate-200">
                 <div class="space-y-1">
                     <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-500">
                         <span class="text-slate-900 font-bold">CASE STUDY 01</span>
@@ -165,8 +168,9 @@
                         <span>•</span>
                         <span>Team of 7</span>
                     </div>
-                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 flex items-center gap-3">
                         M270 Remote Tracked Missile Launcher
+                        <i class="fa-solid fa-chevron-down text-base text-slate-400 group-open:rotate-180 transition-transform duration-300"></i>
                     </h2>
                     <p class="text-xs sm:text-sm text-slate-500 font-mono">
                         ELISA-Aerospace 3rd Year Capstone Project • Defended before Engineering Jury
@@ -175,14 +179,16 @@
 
                 <!-- Document Modal Triggers -->
                 <div class="flex flex-wrap items-center gap-2.5">
-                    <button onclick="openModal('user-manual-modal')" class="px-3.5 py-2 rounded bg-slate-900 hover:bg-slate-800 text-white text-xs font-mono font-medium shadow-sm transition flex items-center gap-2">
+                    <button onclick="event.stopPropagation(); openModal('user-manual-modal')" class="px-3.5 py-2 rounded bg-slate-900 hover:bg-slate-800 text-white text-xs font-mono font-medium shadow-sm transition flex items-center gap-2">
                         <i class="fa-solid fa-file-pdf text-rose-400"></i> Open User Manual (PDF)
                     </button>
-                    <button onclick="openModal('poster-modal')" class="px-3.5 py-2 rounded bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-mono font-medium border border-slate-200 transition flex items-center gap-2">
+                    <button onclick="event.stopPropagation(); openModal('poster-modal')" class="px-3.5 py-2 rounded bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-mono font-medium border border-slate-200 transition flex items-center gap-2">
                         <i class="fa-solid fa-image text-slate-600"></i> View Project Poster (Image)
                     </button>
                 </div>
-            </div>
+            </summary>
+
+            <div class="space-y-10 pt-10">
 
             <!-- Technical Metadata Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200 text-xs font-mono">
@@ -378,15 +384,16 @@
                 </div>
 
             </div>
-        </section>
+            </div>
+        </details>
 
         <!-- ======================================================== -->
         <!-- PROJECT 2: DOUGLAS DC-3 / C-47 1:20 SCALE CAD REPLICA    -->
         <!-- ======================================================== -->
-        <section id="dc3-dossier" class="bg-white border border-slate-200 rounded-xl p-6 sm:p-10 shadow-sm space-y-10">
+        <details id="dc3-dossier" class="group bg-white border border-slate-200 rounded-xl p-6 sm:p-10 shadow-sm transition-all scroll-mt-20">
             
             <!-- Section Header & Deliverables -->
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-200">
+            <summary class="cursor-pointer list-none select-none [&::-webkit-details-marker]:hidden flex flex-col md:flex-row md:items-center justify-between gap-4 group-open:pb-6 group-open:border-b group-open:border-slate-200">
                 <div class="space-y-1">
                     <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-500">
                         <span class="text-slate-900 font-bold">CASE STUDY 02</span>
@@ -395,8 +402,9 @@
                         <span>•</span>
                         <span>Solo Project</span>
                     </div>
-                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 flex items-center gap-3">
                         Douglas DC-3 / C-47 Scale CAD Architecture (1:20)
+                        <i class="fa-solid fa-chevron-down text-base text-slate-400 group-open:rotate-180 transition-transform duration-300"></i>
                     </h2>
                     <p class="text-xs sm:text-sm text-slate-500 font-mono">
                         Historical Blueprints Digitalization • Airframe Skeleton & Hybrid Skinning
@@ -407,7 +415,9 @@
                     <span>Target Wingspan:</span>
                     <strong class="text-slate-900 font-semibold">1.50 m (Wingspan)</strong>
                 </div>
-            </div>
+            </summary>
+
+            <div class="space-y-10 pt-10">
 
             <!-- Technical Metadata Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200 text-xs font-mono">
@@ -555,7 +565,189 @@
                 </div>
 
             </div>
-        </section>
+            </div>
+        </details>
+
+        <!-- ======================================================== -->
+        <!-- PROJECT 3: CUSTOM HOME AUTOMATION & LOCAL AI ECOSYSTEM   -->
+        <!-- ======================================================== -->
+        <details id="vault-iot-dossier" class="group bg-white border border-slate-200 rounded-xl p-6 sm:p-10 shadow-sm transition-all scroll-mt-20">
+            
+            <!-- Section Header & Deliverables -->
+            <summary class="cursor-pointer list-none select-none [&::-webkit-details-marker]:hidden flex flex-col md:flex-row md:items-center justify-between gap-4 group-open:pb-6 group-open:border-b group-open:border-slate-200">
+                <div class="space-y-1">
+                    <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-500">
+                        <span class="text-slate-900 font-bold">CASE STUDY 03</span>
+                        <span>•</span>
+                        <span>Embedded IoT & Edge AI Architecture</span>
+                        <span>•</span>
+                        <span>Personal Project</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 flex items-center gap-3">
+                        Modular Retro-Futuristic Home Automation & Local LLM Server
+                        <i class="fa-solid fa-chevron-down text-base text-slate-400 group-open:rotate-180 transition-transform duration-300"></i>
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-500 font-mono">
+                        End-to-End Hardware Prototyping (CAD to PCB) • Home Assistant • Ollama Local Inference
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-2 font-mono text-xs text-slate-600 bg-slate-100 border border-slate-200 px-3 py-1.5 rounded">
+                    <span>Aesthetic / Theme:</span>
+                    <strong class="text-slate-900 font-semibold flex items-center gap-1.5">
+                        <i class="fa-solid fa-radiation text-amber-500"></i> Fallout / Vault-Tec
+                    </strong>
+                </div>
+            </summary>
+
+            <div class="space-y-10 pt-10">
+
+            <!-- Technical Metadata Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200 text-xs font-mono">
+                <div>
+                    <span class="text-slate-500 block">CORE HUB</span>
+                    <span class="font-semibold text-slate-900">Linux • Home Assistant • Ollama</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 block">EDGE HARDWARE</span>
+                    <span class="font-semibold text-slate-900">ESP Microcontrollers & I2C/WiFi</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 block">MANUFACTURING</span>
+                    <span class="font-semibold text-slate-900">PETG FDM, Heat-Set Inserts & CAD</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 block">STATUS</span>
+                    <span class="font-semibold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded">Iterative / Life-Cycle</span>
+                </div>
+            </div>
+
+            <!-- Detailed Case Study Body -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left 7 Columns: Technical Specifications -->
+                <div class="lg:col-span-7 space-y-6 text-sm text-slate-700 leading-relaxed">
+                    
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 1. System Vision & Full-Stack Hardware Workflow
+                        </h3>
+                        <p>
+                            Conçu comme un écosystème évolutif sans obsolescence programmée, ce projet intègre l'ensemble de la chaîne mécatronique : de la modélisation CAO sous contraintes thermomécaniques, au schéma électronique, soudure, routage, firmware ESP, jusqu'au serveur central. L'identité visuelle puise dans l'univers <em>Fallout / Vault-Tec</em>, alliant commandes rétro-industrielles physiques et intelligence décentralisée.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 2. Edge Nodes & Mechanical Engineering Solutions
+                        </h3>
+                        <ul class="list-disc pl-5 space-y-1.5 marker:text-slate-400">
+                            <li><strong>Non-Invasive Actuation (Shutter Drive):</strong> Développé pour contourner les contraintes locatives (volet roulant manuel à manivelle). Conception d'un pignon à cannelures fendu venant manchonner la manivelle sans altération mécanique de l'existant. Motorisation via moteur DC coupleux couplé à un encodeur à effet Hall pour l'asservissement en position.</li>
+                            <li><strong>Material Selection & Vicat Transition:</strong> Remplacement du PLA par le <strong>PETG</strong> pour supporter l'échauffement continu des blocs d'alimentation et des étages de puissance sans fluage mécanique.</li>
+                            <li><strong>Dual Control Topology:</strong> Tous les sous-ensembles intègrent une redondance stricte : contrôle autonome par actionneur manuel physique en façade et automatisation distante via Home Assistant. Alimentation filaire secteur via convertisseurs step-down (abaisseurs 5V) évitant les cycles de recharge batterie.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xs font-mono uppercase tracking-wider text-slate-900 font-bold mb-2 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-slate-900 rounded-full"></span> 3. Dedicated Server & Hybrid Computing Architecture
+                        </h3>
+                        <p>
+                            Le serveur local repose sur une machine reconditionnée (PSU Corsair CX500, GPU dédié, 12 Go DDR3) exploitée sous Linux. Il héberge la passerelle <strong>Home Assistant</strong> pour la logique domotique et <strong>Ollama</strong> pour le déploiement d'un LLM local privé.
+                        </p>
+                        <p class="mt-2 text-slate-600">
+                            L'architecture vise à déléguer des tâches de raisonnement complexe à l'IA pour générer des automatisations prédictives et contextuelles (ex: régulation thermique fine plutôt que de simples seuils statiques). Une répartition de charge (<em>distributed offloading</em>) vers un PC hôte plus puissant est prévue lors des pics d'inférence.
+                        </p>
+                    </div>
+
+                    <!-- Thermal & Assembly Lessons Learned -->
+                    <div class="bg-amber-50/70 border border-amber-200/80 rounded-lg p-4 space-y-2 text-xs">
+                        <div class="font-mono uppercase font-bold text-amber-900 flex items-center gap-2">
+                            <i class="fa-solid fa-screwdriver-wrench text-amber-600"></i> Conception Modulaire : Gestion du Volume & Airflow
+                        </div>
+                        <p class="text-amber-950 leading-relaxed">
+                            <strong>Contrainte de gabarit d'impression :</strong> Le volume du châssis serveur dépassant les limites du plateau d'impression, le boîtier a été segmenté en plaques structurelles usinées par FDM, assemblées par vis mécaniques et <strong>inserts filetés thermiques</strong>.
+                        </p>
+                        <p class="text-amber-950 leading-relaxed">
+                            <strong>Management thermique & faisceaux :</strong> Intégration de tunnels d'airflow dédiés au refroidissement de la carte d'extension et du GPU, et canalisation des passages de câbles pour un accès rapide aux borniers de raccordement.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Right 5 Columns: Visual Engineering Gallery -->
+                <div class="lg:col-span-5 space-y-4">
+                    
+                    <!-- Media Card 1: Vault-Tec Module (Bouquetin) -->
+                    <div class="border border-slate-200 rounded-lg overflow-hidden bg-slate-900 shadow-sm group">
+                        <div class="px-3 py-2 bg-slate-950 text-slate-300 flex items-center justify-between text-xs font-mono border-b border-slate-800">
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-gauge text-amber-400 text-[10px]"></i> Vault-Tec "Bouquetin" Unit
+                            </span>
+                            <span class="text-[10px] text-slate-400 font-mono">Actuator / Display CAD</span>
+                        </div>
+                        <div class="relative bg-slate-950 flex items-center justify-center p-2">
+                            <img src="assets/images/Bouquetin.jpg" 
+                                 alt="Module domotique Vault-Tec Bouquetin CAO" 
+                                 class="w-full h-auto max-h-56 object-contain rounded cursor-pointer hover:opacity-95 transition"
+                                 onclick="inspectImage(this.src, 'Module domotique Vault-Tec Bouquetin — Intégration toggle switches, affichage à cadran et commande manuelle/auto')">
+                        </div>
+                        <div class="p-3 bg-white border-t border-slate-200 text-xs text-slate-600 font-mono">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-slate-900">Console de commande locale</span>
+                                <span class="text-[11px] text-slate-400">Click to expand</span>
+                            </div>
+                            <p class="text-[11px] text-slate-500 mt-1">Interrupteurs à levier industriels, sélecteur de mode manuel/auto, jauge analogique rétro-éclairée et finition vintage.</p>
+                        </div>
+                    </div>
+
+                    <!-- Media Card 2: Custom Server Enclosure Frontpanel -->
+                    <div class="border border-slate-200 rounded-lg overflow-hidden bg-slate-900 shadow-sm group">
+                        <div class="px-3 py-2 bg-slate-950 text-slate-300 flex items-center justify-between text-xs font-mono border-b border-slate-800">
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-server text-sky-400 text-[10px]"></i> Custom Server Chassis
+                            </span>
+                            <span class="text-[10px] text-slate-400 font-mono">Modular Panel CAD</span>
+                        </div>
+                        <div class="relative bg-slate-950 flex items-center justify-center p-2">
+                            <img src="assets/images/Capture d'écran 2026-11-25 094050.jpg" 
+                                 alt="Boîtier serveur domotique modulaire en CAO" 
+                                 class="w-full h-auto max-h-52 object-contain rounded cursor-pointer hover:opacity-95 transition"
+                                 onclick="inspectImage(this.src, 'Châssis serveur IA/Home Assistant — Assemblage modulaire par plaques et découpes airflow/I-O')">
+                        </div>
+                        <div class="p-3 bg-white border-t border-slate-200 text-xs text-slate-600 font-mono">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-slate-900">Face inclinée & Gestion Airflow</span>
+                                <span class="text-[11px] text-slate-400">Click to expand</span>
+                            </div>
+                            <p class="text-[11px] text-slate-500 mt-1">Pupitre de commutation intégré, découpes pour ventilateurs de tirage forcé et baie de fixation pour cartes électroniques.</p>
+                        </div>
+                    </div>
+
+                    <!-- Media Card 3: Non-Invasive Crank Coupling Gear -->
+                    <div class="border border-slate-200 rounded-lg overflow-hidden bg-slate-100 shadow-sm group">
+                        <div class="px-3 py-2 bg-slate-900 text-slate-200 flex items-center justify-between text-xs font-mono border-b border-slate-800">
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-gears text-emerald-400 text-[10px]"></i> Shutter Crank Coupling Gear
+                            </span>
+                            <span class="text-[10px] text-slate-400 font-mono">Torque Transmission</span>
+                        </div>
+                        <div class="relative bg-slate-950 flex items-center justify-center p-2">
+                            <img src="assets/images/Couple store.jpg" 
+                                 alt="Engrenage d'accouplement pour manivelle de volet roulant" 
+                                 class="w-full h-auto max-h-44 object-contain rounded cursor-pointer hover:opacity-95 transition"
+                                 onclick="inspectImage(this.src, 'Pignon d\'entraînement sans modification mécanique — Transmission de couple sur profil de manivelle')">
+                        </div>
+                        <div class="p-3 bg-white border-t border-slate-200 text-[11px] text-slate-500 font-mono">
+                            Denture droite inférieure pour entraînement moteur DC et cannelures internes épousant le profil de manivelle pour une installation amovible et réversible.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+        </details>
 
         <!-- ======================================================== -->
         <!-- SECTION 3: WORKSHOP & PROTOTYPING SKILLS MATRIX          -->
@@ -706,3 +898,14 @@
             <!-- PDF Viewer Body -->
             <div class="flex-1 bg-slate-100 relative overflow-hidden flex flex-col">
                 <iframe id="pdfFrame" src="assets/documents/Notice d'utilisation.pdf" class="w-full
+
+    <script>
+        // Open the matching project when a nav link / hash targets a closed dropdown
+        function openFromHash() {
+            const el = location.hash && document.getElementById(location.hash.slice(1));
+            if (el && el.tagName === 'DETAILS') { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        }
+        window.addEventListener('hashchange', openFromHash);
+        window.addEventListener('DOMContentLoaded', openFromHash);
+        document.querySelectorAll('summary button').forEach(b => b.addEventListener('click', e => e.preventDefault()));
+    </script>
